@@ -1,0 +1,110 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.messageTop{
+    display: flex;
+}
+.messageImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.messageText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3e4354;
+    color: white;
+    max-width: 500px;
+    margin: 0;
+    font-size: 14px;
+}
+.messageBottom{
+    font-size: 13px;
+    margin-top: 10px;
+    color: grey;
+}
+.message.own{
+    align-items: flex-end;
+}
+.messageImg.own{
+    display: none;
+}
+.message.own .messageText{
+    background-color: #EDEDEDFF;
+    color: black;
+}
+
+.chatBoxUserName{
+    font-size: 22px;
+}
+.chatBoxBottom{
+    width: 100%;
+    height: 150px;
+    background-color: #EDEDEDFF;
+    /*margin-top: 5px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-top: 2px solid #E2DEDEFF;
+    border-bottom: 2px solid #E2DEDEFF;
+}
+.chatMessageInput {
+    border: none;
+    width: 90%;
+}
+.wrapChat{
+    height: 55px;
+    width: 96%;
+    border: 2px solid #E2DEDEFF;
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.chatSubmitButton{
+    border: none;
+    width: 40px;
+    background-color: transparent;
+}
+.arrowSend{
+    width: 30px;
+    cursor: pointer;
+}
+.arrowSend:active{
+    width: 28px;
+}
+
+.chatBoxPicturesWrap{
+    width: 75px;
+}
+.chatBoxUserPicture{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px 0 10px 10px;
+}
+.chatOnlineBadgeConv{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -14px;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    .messageText{
+        box-sizing: border-box;
+        flex: 0.8;
+    }
+
+}

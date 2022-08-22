@@ -1,0 +1,53 @@
+.login-page {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    background-image: linear-gradient(#EDEDEDFF, #3e4354);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 300px;
+    height: 220px;
+    background-color: aliceblue;
+    border: 3px solid #3e4354;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    /*width: 175px;*/
+    /*height: 40px;*/
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.google{
+    width: 60%;
+    height: 20%;
+    color: white;
+    background-color: #40a9ff;
+}
+.facebook{
+    width: 60%;
+    height: 20%;
+    color: white;
+    background-color: #096dd9;
+}

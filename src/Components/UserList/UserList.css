@@ -1,0 +1,65 @@
+.userList{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #E2DEDEFF;
+}
+/*.userList:hover{*/
+/*    background-color: #EDEDEDFF;*/
+/*}*/
+.userListImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: -12px;
+    object-fit: cover;
+}
+.flexDirectionColumn{
+    display: flex;
+    flex-direction: column;
+}
+.displayFlex{
+    display: flex;
+}
+.userListName{
+    font-family: monospace, sans-serif;
+}
+
+.userListText {
+    font-size: 13px;
+    max-height: 30px;
+    max-width: 300px;
+    overflow: hidden;
+    color: gray;
+}
+.userListTime{
+    font-size: 13px;
+    margin-left: 10px;
+    color: gray;
+    min-width: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .chatMenu {
+        max-width: 18%;
+        min-width: 18%;
+        flex: none;
+        border: 2px solid #E2DEDEFF;
+    }
+
+    .userListName, .userListText, .userListTime {
+        display: none;
+    }
+
+    .chatBox {
+        max-width: 80%;
+        flex: none;
+
+        border-right: 2px solid #E2DEDEFF;
+    }
+}
